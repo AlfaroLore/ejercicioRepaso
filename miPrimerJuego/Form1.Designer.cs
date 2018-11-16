@@ -38,6 +38,11 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.door = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.PlayerScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -46,6 +51,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.door)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -88,7 +97,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox3.Location = new System.Drawing.Point(186, 218);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(249, 39);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "platform";
@@ -96,7 +105,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox4.Location = new System.Drawing.Point(83, 303);
+            this.pictureBox4.Location = new System.Drawing.Point(88, 292);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(200, 40);
             this.pictureBox4.TabIndex = 4;
@@ -133,11 +142,66 @@
             this.door.TabStop = false;
             this.door.Tag = "";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox7.Location = new System.Drawing.Point(325, 361);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(63, 38);
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "coin";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox8.Location = new System.Drawing.Point(128, 248);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(52, 38);
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "coin";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox9.Location = new System.Drawing.Point(213, 176);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(75, 36);
+            this.pictureBox9.TabIndex = 10;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "coin";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Yellow;
+            this.pictureBox10.Location = new System.Drawing.Point(97, 65);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(91, 50);
+            this.pictureBox10.TabIndex = 11;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "coin";
+            // 
+            // PlayerScore
+            // 
+            this.PlayerScore.AutoSize = true;
+            this.PlayerScore.Location = new System.Drawing.Point(353, 25);
+            this.PlayerScore.Name = "PlayerScore";
+            this.PlayerScore.Size = new System.Drawing.Size(35, 13);
+            this.PlayerScore.TabIndex = 12;
+            this.PlayerScore.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 612);
+            this.Controls.Add(this.PlayerScore);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.door);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -158,7 +222,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.door)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -173,6 +242,11 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox door;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label PlayerScore;
     }
 }
 

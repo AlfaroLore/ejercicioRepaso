@@ -80,8 +80,8 @@ namespace miPrimerJuego
 
             if (jumping)
             {
-                jumpSpeed = -12;
-                force = -1;
+                jumpSpeed = -100;
+                force = -100;
             }
             else
             {
@@ -99,20 +99,14 @@ namespace miPrimerJuego
                 }
                 if (x is PictureBox && x.Tag == "coin")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !jumping)
-                    {
-                        this.Controls.Remove(x);
-                        score++;
-                    }
+                    //TODO eat coin
                 }
                 if (player.Bounds.IntersectsWith(door.Bounds))
                 {
-                    timer1.Stop();
-                    MessageBox.Show("YOU WIN \n Score:" + score);
-                    Application.Exit();
+                    //TODO display YOU WIN and SCORE message boxs
                 }
             }
-            //PlayerScore.Text = "000" + score;
+            PlayerScore.Text = "000" + score;
         }
     }
 }
